@@ -1,0 +1,47 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+} 
+
+@keyframes blink {
+    0%   { background-color: #890050; }
+    50% { background-color: #9b306ef1; }
+    100%   { background-color: #890050; }  }
+  body {
+  animation:         blink 5s infinite;
+}
+
+.background-image { 
+    background: url('kanye west.png');
+    
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position:fixed;
+    z-index: 0;
+    width: 100%; 
+    height: 100%;
+    animation: fade 50s ease-in;
+    animation-play-state: paused;
+} 
+
+
+@keyframes fade { 
+    0% { 
+        opacity: 0; 
+    } 
+    25% { 
+        opacity: 0.10; 
+    } 
+    50% { 
+        opacity: 1; 
+    } 
+    75% { 
+        opacity: 1; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
